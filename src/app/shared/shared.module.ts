@@ -6,6 +6,7 @@ import {RouterModule} from '@angular/router'
 import {ActionButtonsComponent} from 'app/components/action-buttons/action-buttons.component'
 import {SidebarComponent} from 'app/components/sidebar/sidebar.component'
 import {FlashlightDirective} from 'app/app-core/directives/flashlight.directive'
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 
 const pipes = []
 
@@ -20,6 +21,7 @@ const modules = [
     HttpClientModule,
     NgOptimizedImage,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
 ]
 
 @NgModule({
