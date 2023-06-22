@@ -1,0 +1,52 @@
+<div class="grid grid-cols-2">
+    <sidebar />
+
+    <div class="w-full max-w-screen-sm mr-auto p-10">
+        <about />
+
+        <work-experiences />
+
+        <div class="grid grid-cols-2 gap-4 px-10 mt-20">
+            <button
+                class="text-white rounded-md h-[65px] w-full font-medium bg-sidebar-bg md:hover:bg-black md:hover:text-brand-yellow"
+                *ngFor="let button of BUTTONS"
+            >
+                {{ button.title }}
+            </button>
+        </div>
+
+        <div class="p-10 text-sub-headline-text">
+            Loosely designed in
+            <a
+                href="https://www.figma.com/blog/figma-on-figma-how-we-built-figma-dot-coms-design-system/"
+                class="text-brand-blue hover:text-sky-500"
+                >Figma</a
+            >
+            and coded in
+
+            <a
+                href="https://code.visualstudio.com/"
+                class="text-brand-blue hover:text-sky-500"
+                >Visual Studio Code</a
+            >
+            by yours truly. Built with
+            <a
+                href="https://angular.io/"
+                class="text-brand-blue hover:text-sky-500"
+                >Angular 16</a
+            >
+            and
+            <a
+                href="https://tailwindcss.com/docs/guides/angular"
+                class="text-brand-blue hover:text-sky-500"
+                >Tailwind CSS</a
+            >, deployed in
+            <a
+                href="https://github.com/"
+                class="text-brand-blue hover:text-sky-500"
+                >Github</a
+            >
+            . All text is set in the Default System typeface.
+        </div>
+    </div>
+</div>
