@@ -9,10 +9,26 @@ const routes: Routes = [
                 (module) => module.HomeModule,
             ),
     },
+
+    {
+        path: 'latest-projects',
+        loadChildren: () =>
+            import(
+                '../app/modules/latest-projects/latest-projects.module'
+            ).then((module) => module.LatestProjectsModule),
+    },
+
+    {
+        path: 'all-projects',
+        loadChildren: () =>
+            import('../app/modules/all-projects/all-projects.module').then(
+                (module) => module.AllProjectsModule,
+            ),
+    },
 ]
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
+    imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'top'})],
     exports: [RouterModule],
 })
 export class AppRoutingModule {}

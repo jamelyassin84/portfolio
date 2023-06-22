@@ -1,0 +1,87 @@
+<div class="w-full flex min-h-screen" flashLight>
+    <div class="mx-auto w-full max-w-screen-lg py-20">
+        <div
+            role="button"
+            routerLink="/"
+            class="text-brand-yellow font-bold flex items-center md:hover:text-yellow-500"
+        >
+            <i class="bi bi-arrow-left mr-4"></i>
+            Jamel Yassin
+        </div>
+        <div class="text-5xl font-bold text-brand-blue">Latest Projects</div>
+
+        <a
+            target="_blank"
+            [href]="project.link"
+            (mouseenter)="hovered = true"
+            (mouseleave)="hovered = false"
+            [ngClass]="{'opacity-60': hovered}"
+            *ngFor="let project of LATEST_PROJECTS; let i = index"
+            class="w-full grid grid-cols-2 my-5 rounded-lg p-10 md:hover:opacity-100 md:hover:bg-sidebar-bg/20 md:hover:shadow-2xl shadow-white/50 md:hover:glass-effect"
+        >
+            <div *ngIf="!isEven(i)" class="relative">
+                <div class="scale-[1.2] origin-top-left relative -z-[9]">
+                    <img
+                        style="
+                            mix-blend-mode: multiply;
+                            filter: contrast(1) brightness(90%);
+                        "
+                        class="object-contain h-full w-full"
+                        [src]="project.image"
+                        alt=""
+                    />
+                </div>
+            </div>
+
+            <div
+                [ngClass]="{'text-right': !isEven(i), 'text-left': isEven(i)}"
+                class="relative z-10"
+            >
+                <div class="text-brand-red">Featured Project</div>
+
+                <div class="mt-2 text-xl text-white font-bold">
+                    {{ project.title }}
+                </div>
+
+                <div
+                    class="text-left p-10 bg-sidebar-bg my-4 text-secondary-text rounded-md"
+                >
+                    {{ project.description }}
+                </div>
+            </div>
+
+            <div *ngIf="isEven(i)" class="relative">
+                <div class="scale-[1.2] origin-top-right relative -z-[9]">
+                    <img
+                        style="
+                            mix-blend-mode: multiply;
+                            filter: contrast(1) brightness(90%);
+                        "
+                        class="object-contain h-full w-full grayscale"
+                        [src]="project.image"
+                        alt=""
+                    />
+                </div>
+            </div>
+
+            <div class="inline-block w-full mt-4 col-span-2">
+                <div class="inline-block mt-4">
+                    <div
+                        [ngClass]="{
+                            'items-end justify-end': !isEven(i),
+                            'items-start justify-start': isEven(i)
+                        }"
+                        class="flex flex-wrap -mx-1"
+                    >
+                        <div
+                            class="h-[35px] px-4 py-1 mx-2 my-2 text-sm rounded-full text-brand-purple flex items-center text-center bg-brand-purple/20"
+                            *ngFor="let badge of project.badges"
+                        >
+                            {{ badge }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>

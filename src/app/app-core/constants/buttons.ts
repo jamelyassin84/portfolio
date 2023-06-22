@@ -6,7 +6,7 @@ export const BUTTONS = [
 
     {
         title: 'Latest Projects',
-        link: '',
+        link: '/latest-projects',
     },
 
     {

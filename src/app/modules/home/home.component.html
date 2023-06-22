@@ -8,6 +8,7 @@
 
         <div class="grid grid-cols-2 gap-4 px-10 mt-20">
             <button
+                [routerLink]="button.link"
                 class="text-white rounded-md h-[65px] w-full font-medium bg-sidebar-bg md:hover:bg-black md:hover:text-brand-yellow"
                 *ngFor="let button of BUTTONS"
             >
