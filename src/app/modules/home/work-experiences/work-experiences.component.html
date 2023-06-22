@@ -1,7 +1,10 @@
 <div
     role="button"
     *ngFor="let experience of WORK_EXPERIENCES"
-    class="grid grid-cols-4 p-5 my-4 items-start gap-x-5 md:hover:opacity-100 md:hover:bg-black/20 rounded-md md:hover:shadow-2xl shadow-white/50 opacity-60 md:hover:glass-effect"
+    (mouseenter)="hovered = true"
+    (mouseleave)="hovered = false"
+    [ngClass]="{'opacity-60': hovered}"
+    class="grid grid-cols-4 p-5 my-4 items-start gap-x-5 md:hover:opacity-100 md:hover:bg-black/20 rounded-md md:hover:shadow-2xl shadow-white/50 md:hover:glass-effect"
 >
     <div class="text-sub-headline-text flex items-center mt-5">
         <div>{{ experience.dates[0] }}</div>

@@ -7,4 +7,6 @@ import {WORK_EXPERIENCES} from 'app/app-core/constants/work-experiences'
 })
 export class WorkExperiencesComponent {
     readonly WORK_EXPERIENCES = WORK_EXPERIENCES
+
+    hovered: boolean = false
 }
