@@ -1,1 +1,25 @@
-<p>technologies works!</p>
+<div class="w-full flex min-h-screen" flashLight>
+    <div class="mx-auto w-full max-w-screen-lg py-20">
+        <div
+            role="button"
+            routerLink="/"
+            class="text-brand-yellow font-bold flex items-center md:hover:text-yellow-500"
+        >
+            <i class="bi bi-arrow-left mr-4"></i>
+            Jamel Yassin
+        </div>
+        <div class="text-5xl font-bold text-brand-blue">Technologies Used</div>
+        <div class="inline-block w-full mt-4 col-span-2">
+            <div class="inline-block mt-4">
+                <div class="flex flex-wrap -mx-1">
+                    <div
+                        class="h-[35px] px-4 py-1 mx-2 my-2 text-sm rounded-full text-brand-purple flex items-center text-center bg-brand-purple/20"
+                        *ngFor="let badge of TECHNOLOGIES_USED"
+                    >
+                        {{ badge }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

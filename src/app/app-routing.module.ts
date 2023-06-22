@@ -41,6 +41,14 @@ const routes: Routes = [
                 (module) => module.FrameworksModule,
             ),
     },
+
+    {
+        path: 'technologies',
+        loadChildren: () =>
+            import('../app/modules/technologies/technologies.module').then(
+                (module) => module.TechnologiesModule,
+            ),
+    },
 ]
 
 @NgModule({

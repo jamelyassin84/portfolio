@@ -45,8 +45,8 @@
                         <a
                             class="md:hover:text-brand-yellow md:hover:underline"
                             target="_blank"
-                            href="{{ project.link }}"
-                            >{{ project.link }}</a
+                            href="{{ project.link ?? project.description }}"
+                            >{{ project.link ?? project.description }}</a
                         >
                     </td>
                 </tr>

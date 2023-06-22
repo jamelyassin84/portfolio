@@ -35,9 +35,9 @@ export const FREE_LANCES = [
 
     {
         title: 'ISUFST Human Resource Management on Cloud',
-        link: '',
+        link: 'https://github.com/CICT-ISCOF/hr-cloud.git',
         badges: ['React', 'Laravel', 'Mail Gun'],
-        description: 'https://github.com/CICT-ISCOF/hr-cloud.git',
+        description: '',
     },
     {
         title: 'ISAT-U Faculties & staffs Management System',
@@ -62,16 +62,15 @@ export const FREE_LANCES = [
     },
     {
         title: 'ISUFST Lagaw & Learn',
-        link: '',
+        description: '',
         badges: ['Angular 16', 'Laravel', 'AWS', 'S3', 'Amplify', 'EC2'],
-        description:
-            'https://github.com/CICT-ISCOF/lagaw-and-learn-website.git',
+        link: 'https://github.com/CICT-ISCOF/lagaw-and-learn-website.git',
     },
     {
         title: 'Rural Health Unit of Santa Barbara',
-        link: '',
+        description: '',
         badges: ['Angular 16', 'Firebase', 'Mail Gun'],
-        description: 'https://github.com/jamelyassin84/sta-barbara-rhu.git',
+        link: 'https://github.com/jamelyassin84/sta-barbara-rhu.git',
     },
     {
         title: 'Rich English',

@@ -16,11 +16,11 @@ export const BUTTONS = [
 
     {
         title: 'Frameworks/Libraries',
-        link: 'frame-works-and-libraries',
+        link: '/frame-works-and-libraries',
     },
     {
         title: 'Technologies Used',
-        link: '',
+        link: '/technologies',
     },
     {
         title: 'Core Skills ',
