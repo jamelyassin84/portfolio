@@ -6,12 +6,17 @@ import {RouterModule} from '@angular/router'
 import {ActionButtonsComponent} from 'app/components/action-buttons/action-buttons.component'
 import {SidebarComponent} from 'app/components/sidebar/sidebar.component'
 import {FlashlightDirective} from 'app/app-core/directives/flashlight.directive'
+import {WhatsNextComponent} from 'app/components/whats-next/whats-next.component'
 
 const pipes = []
 
 const directives = [FlashlightDirective]
 
-const components = [SidebarComponent, ActionButtonsComponent]
+const components = [
+    SidebarComponent,
+    ActionButtonsComponent,
+    WhatsNextComponent,
+]
 
 const modules = [
     RouterModule,
