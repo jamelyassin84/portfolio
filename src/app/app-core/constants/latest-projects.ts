@@ -136,4 +136,22 @@ export const LATEST_PROJECTS = [
             'Passkit',
         ],
     },
+
+    {
+        title: 'Rive',
+        link: '',
+        description: `Rive is a cutting-edge platform designed to empower sellers to showcase and sell their products online through a convenient mobile app. With Rive, sellers can effortlessly post their products and generate shareable links directly from the mobile app. These links are compatible with popular social media platforms such as WhatsApp, Facebook, and Instagram, thanks to opengraph support. Users who click on these links will be directed to the product page, where they can easily add desired quantities to their cart and proceed to checkout using the secure Stripe payment gateway. Additionally, Rive provides a user-friendly website where customers can explore a vibrant marketplace and discover a wide range of products`,
+        image: '/assets/app/rive.png',
+        badges: [
+            'Angular 16',
+            'Expo',
+            'React Native',
+            'Adonis',
+            'Redis',
+            'AWS',
+            'Stripe',
+            'Play Store',
+            'App Store',
+        ],
+    },
 ]

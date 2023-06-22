@@ -25,6 +25,22 @@ const routes: Routes = [
                 (module) => module.AllProjectsModule,
             ),
     },
+
+    {
+        path: 'free-lance-and-pro-bono-projects',
+        loadChildren: () =>
+            import(
+                '../app/modules/freelance-projects/freelance-projects.module'
+            ).then((module) => module.FreelanceProjectsModule),
+    },
+
+    {
+        path: 'frame-works-and-libraries',
+        loadChildren: () =>
+            import('../app/modules/frameworks/frameworks.module').then(
+                (module) => module.FrameworksModule,
+            ),
+    },
 ]
 
 @NgModule({

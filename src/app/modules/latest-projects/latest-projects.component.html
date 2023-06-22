@@ -66,13 +66,7 @@
 
             <div class="inline-block w-full mt-4 col-span-2">
                 <div class="inline-block mt-4">
-                    <div
-                        [ngClass]="{
-                            'items-end justify-end': !isEven(i),
-                            'items-start justify-start': isEven(i)
-                        }"
-                        class="flex flex-wrap -mx-1"
-                    >
+                    <div class="flex flex-wrap -mx-1">
                         <div
                             class="h-[35px] px-4 py-1 mx-2 my-2 text-sm rounded-full text-brand-purple flex items-center text-center bg-brand-purple/20"
                             *ngFor="let badge of project.badges"

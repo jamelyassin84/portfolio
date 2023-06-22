@@ -11,12 +11,12 @@ export const BUTTONS = [
 
     {
         title: 'Freelances & Pro bonos ',
-        link: '',
+        link: '/free-lance-and-pro-bono-projects',
     },
 
     {
-        title: 'Frameworks Used',
-        link: '',
+        title: 'Frameworks/Libraries',
+        link: 'frame-works-and-libraries',
     },
     {
         title: 'Technologies Used',

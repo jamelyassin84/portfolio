@@ -1,1 +1,58 @@
-<p>freelance-projects works!</p>
+<div class="w-full flex min-h-screen" flashLight>
+    <div class="mx-auto w-full max-w-screen-lg py-20">
+        <div
+            role="button"
+            routerLink="/"
+            class="text-brand-yellow font-bold flex items-center md:hover:text-yellow-500"
+        >
+            <i class="bi bi-arrow-left mr-4"></i>
+            Jamel Yassin
+        </div>
+        <div class="text-5xl font-bold text-brand-blue">
+            Freelance and Pro bono Projects
+        </div>
+
+        <table class="w-full text-secondary-text mt-8 text-left">
+            <thead>
+                <tr class="text-white h-[50px]">
+                    <th>Project</th>
+                    <th>Techs</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr
+                    class="h-20 border-t border-t-secondary-text/20"
+                    *ngFor="let project of FREE_LANCES"
+                >
+                    <td>{{ project.title }}</td>
+                    <td>
+                        <div class="inline-block w-full">
+                            <div class="inline-block">
+                                <div class="flex flex-wrap -mx-1 items-start">
+                                    <div
+                                        class="h-[35px] px-4 py-1 mx-2 my-2 text-sm rounded-full text-brand-purple flex items-center text-center bg-brand-purple/20"
+                                        *ngFor="let badge of project.badges"
+                                    >
+                                        {{ badge }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <a
+                            class="md:hover:text-brand-yellow md:hover:underline"
+                            target="_blank"
+                            href="{{ project.link }}"
+                            >{{ project.link }}</a
+                        >
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <whats-next />
+    </div>
+</div>

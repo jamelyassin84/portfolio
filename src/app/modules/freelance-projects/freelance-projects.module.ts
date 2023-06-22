@@ -1,15 +1,15 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FreelanceProjectsComponent } from './freelance-projects.component';
-
-
+import {NgModule} from '@angular/core'
+import {FreelanceProjectsComponent} from './freelance-projects.component'
+import {SharedModule} from 'app/shared/shared.module'
+import {RouterModule} from '@angular/router'
 
 @NgModule({
-  declarations: [
-    FreelanceProjectsComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+    declarations: [FreelanceProjectsComponent],
+    imports: [
+        SharedModule,
+        RouterModule.forChild([
+            {path: '', component: FreelanceProjectsComponent},
+        ]),
+    ],
 })
-export class FreelanceProjectsModule { }
+export class FreelanceProjectsModule {}

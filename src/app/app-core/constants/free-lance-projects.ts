@@ -1,0 +1,225 @@
+export const FREE_LANCES = [
+    {
+        title: 'BPLO Leganes',
+        link: '',
+        badges: [
+            'Angular 16',
+            'Django',
+            'Stripe',
+            'Paymonggo',
+            'Mail Gun',
+            'Redis',
+        ],
+        description: '',
+    },
+    {
+        title: 'Chicken Feeder',
+        link: '',
+        badges: ['Arduino', 'Wifi Module', 'Firebase', 'React Native', 'Expo'],
+        description: '',
+    },
+
+    {
+        title: 'ISUFST Grade Predictor using Psychometric Performance',
+        link: 'https://github.com/jamelyassin84/student-performance-front-end-for-students',
+        badges: ['Angular 15', 'Laravel'],
+        description: '',
+    },
+
+    {
+        title: 'CPU Grade Predictor',
+        link: 'https://github.com/jamelyassin84/student-performance-front-end-for-admin.git',
+        badges: ['Angular 14', 'Laravel'],
+        description: '',
+    },
+
+    {
+        title: 'ISUFST Human Resource Management on Cloud',
+        link: '',
+        badges: ['React', 'Laravel', 'Mail Gun'],
+        description: 'https://github.com/CICT-ISCOF/hr-cloud.git',
+    },
+    {
+        title: 'ISAT-U Faculties & staffs Management System',
+        link: '',
+        badges: ['Angular 15', 'Firebase'],
+        description:
+            'https://github.com/jamelyassin84/ISAT-faculty-management.git',
+    },
+
+    {
+        title: 'ISAT-U Yearbook Generation System',
+        link: '',
+        badges: ['Angular 16', 'Laravel'],
+        description: '',
+    },
+
+    {
+        title: 'Kwizzie',
+        link: '',
+        badges: ['React Native', 'Expo'],
+        description: '',
+    },
+    {
+        title: 'ISUFST Lagaw & Learn',
+        link: '',
+        badges: ['Angular 16', 'Laravel', 'AWS', 'S3', 'Amplify', 'EC2'],
+        description:
+            'https://github.com/CICT-ISCOF/lagaw-and-learn-website.git',
+    },
+    {
+        title: 'Rural Health Unit of Santa Barbara',
+        link: '',
+        badges: ['Angular 16', 'Firebase', 'Mail Gun'],
+        description: 'https://github.com/jamelyassin84/sta-barbara-rhu.git',
+    },
+    {
+        title: 'Rich English',
+        link: '',
+        badges: [
+            'Angular 16',
+            'AWS',
+            'S3',
+            'Amplify',
+            'EC2',
+            'Nest Js',
+            'Stripe',
+            'PayMongo',
+            'Google Live Stream API',
+            'Vonage',
+            'MailGun',
+        ],
+        description: '',
+    },
+    {
+        title: 'San Joaquin Certificates Management System',
+        link: 'https://tiolasgov.github.io/',
+        badges: ['Angular 15', 'Firebase'],
+        description: '',
+    },
+    {
+        title: 'Mango Sweetness Detection',
+        link: '',
+        badges: ['Angular 15', 'Ionic', 'Teachable Machine', 'TFJS'],
+        description: '',
+    },
+    {
+        title: 'Weed Detection and Recognition',
+        link: 'https://github.com/CICT-ISCOF/ionic-weed-detection.git',
+        badges: [
+            'Angular 15',
+            'Ionic',
+            'Firebase',
+            'Teachable Machine',
+            'TFJS',
+        ],
+        description: '',
+    },
+    {
+        title: 'Y-Express',
+        link: '',
+        badges: ['Angular 16', 'Firebase'],
+        description: '',
+    },
+    {
+        title: 'College Supreme Student Council election management and voting web and mobile application',
+        link: 'https://github.com/jamelyassin84/CSSC.git',
+        badges: ['Angular 8', 'Firebase'],
+        description: '',
+    },
+    {
+        title: 'School/University Finder',
+        link: 'https://github.com/jamelyassin84/FaceRecognition.git',
+        badges: ['React Native', 'Expo', 'Firebase'],
+        description: '',
+    },
+
+    {
+        title: 'Attendance System using Facial Recognition',
+        link: 'https://github.com/jamelyassin84/FaceRecognition.git',
+        badges: ['Raspberry Pi', 'Ip Camera', 'OpenCv', 'SQLite', 'Python'],
+        description: '',
+    },
+    {
+        title: 'Koi monitoring (IoT)',
+        link: 'https://github.com/jamelyassin84/KOI.git',
+        badges: [
+            'Raspberry Pi',
+            'Sensors',
+            'React Native',
+            'Expo',
+            'Firebase',
+            'Angular 8',
+        ],
+        description: '',
+    },
+    {
+        title: 'Trash Vending Machine',
+        link: '',
+        badges: ['Raspberry Pi', 'Sensors', 'React Native', 'Expo', 'Firebase'],
+        description: '',
+    },
+    {
+        title: 'Credit Cooperative Automated System',
+        link: 'https://github.com/CICT-ISCOF/loan.git',
+        badges: ['Angular 7', 'Firebase', 'Mail Gun'],
+        description: '',
+    },
+    {
+        title: 'Gardenscapes Assistance',
+        link: 'https://github.com/CICT-ISCOF/GardenScapes-Assistance.git',
+        badges: ['React Native', 'Expo', 'Firebase'],
+        description: '',
+    },
+    {
+        title: 'Air Quality Sensor with Mobile Application',
+        link: '',
+        badges: ['Raspberry Pi', 'Sensors', 'React Native', 'Expo', 'Firebase'],
+        description: '',
+    },
+    {
+        title: 'Automatic Trash Segregator with Mobile Application',
+        link: '',
+        badges: ['Raspberry Pi', 'Sensors', 'React Native', 'Expo', 'Firebase'],
+        description: '',
+    },
+    {
+        title: 'Turn Trash into Treasure',
+        link: '',
+        badges: ['Raspberry Pi', 'Sensors', 'React Native', 'Expo', 'Firebase'],
+        description: '',
+    },
+    {
+        title: 'Fish Marketplace',
+        link: '',
+        badges: ['Angular 6', 'Laravel', 'Socket io'],
+        description: '',
+    },
+    {
+        title: 'Online Job Posting',
+        link: '',
+        badges: ['HTML', 'SCSS', 'JQuery', 'PHP', 'MySQL'],
+        description: '',
+    },
+
+    {
+        title: 'MoodSync',
+        link: '',
+        badges: [
+            'Raspberry Pi',
+            'Sensors',
+            'React Native',
+            'Expo',
+            'Firebase',
+            'Convolutional Neural Network',
+        ],
+        description: '',
+    },
+
+    {
+        title: 'TrustAdvisor',
+        link: '',
+        badges: ['Angular 16', 'Nest Js'],
+        description: '',
+    },
+]
