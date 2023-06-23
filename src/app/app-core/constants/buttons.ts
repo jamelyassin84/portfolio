@@ -24,28 +24,28 @@ export const BUTTONS = [
     },
     {
         title: 'Core Skills ',
-        link: '',
+        link: '/core-skills',
     },
     {
         title: 'Soft Skills',
-        link: '',
+        link: '/soft-skills',
     },
     {
         title: 'Educational Background',
-        link: '',
+        link: '/educational-background',
     },
     {
         title: 'Achievements & Recognitions',
-        link: '',
+        link: '/achievements-and-recognition',
     },
     {
         title: 'Training & Seminars',
-        link: '',
+        link: '/training-and-seminars',
     },
-    {
-        title: 'Competitions Joined',
-        link: '',
-    },
+    // {
+    //     title: 'Competitions Joined',
+    //     link: '',
+    // },
 
     {
         title: 'Character References',

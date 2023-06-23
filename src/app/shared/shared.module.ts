@@ -7,6 +7,7 @@ import {ActionButtonsComponent} from 'app/components/action-buttons/action-butto
 import {SidebarComponent} from 'app/components/sidebar/sidebar.component'
 import {FlashlightDirective} from 'app/app-core/directives/flashlight.directive'
 import {WhatsNextComponent} from 'app/components/whats-next/whats-next.component'
+import {CoreSkillComponent} from 'app/components/core-skill/core-skill.component'
 
 const pipes = []
 
@@ -16,6 +17,7 @@ const components = [
     SidebarComponent,
     ActionButtonsComponent,
     WhatsNextComponent,
+    CoreSkillComponent,
 ]
 
 const modules = [

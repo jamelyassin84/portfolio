@@ -49,6 +49,46 @@ const routes: Routes = [
                 (module) => module.TechnologiesModule,
             ),
     },
+
+    {
+        path: 'core-skills',
+        loadChildren: () =>
+            import('../app/modules/core-skills/core-skills.module').then(
+                (module) => module.CoreSkillsModule,
+            ),
+    },
+
+    {
+        path: 'soft-skills',
+        loadChildren: () =>
+            import('../app/modules/soft-skills/soft-skills.module').then(
+                (module) => module.SoftSkillsModule,
+            ),
+    },
+
+    {
+        path: 'educational-background',
+        loadChildren: () =>
+            import(
+                '../app/modules/educational-background/educational-background.module'
+            ).then((module) => module.EducationalBackgroundModule),
+    },
+
+    {
+        path: 'achievements-and-recognition',
+        loadChildren: () =>
+            import(
+                '../app/modules/achievements-and-recognitions/achievements-and-recognitions.module'
+            ).then((module) => module.AchievementsAndRecognitionsModule),
+    },
+
+    {
+        path: 'training-and-seminars',
+        loadChildren: () =>
+            import(
+                '../app/modules/training-and-seminars/training-and-seminars.module'
+            ).then((module) => module.TrainingAndSeminarsModule),
+    },
 ]
 
 @NgModule({
