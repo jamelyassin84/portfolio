@@ -1,4 +1,7 @@
-<div class="p-10 text-sub-headline-text">
+<div
+    [ngClass]="{'h-[30vh]': seeMore}"
+    class="p-10 overflow-hidden text-sub-headline-text"
+>
     Back in 2016, I took a leap into the world of software development with a
     mission to help students in their programming journey using Visual Studio C#
     and Netbeans. Little did I know that this decision would lead me on an
@@ -124,4 +127,18 @@
     challenges, crafting remarkable software solutions, and making a positive
     difference in the lives of clients, students, and the broader community.
     Cheers to the exciting times ahead!
+</div>
+
+<div
+    role="button"
+    (click)="seeMore = !seeMore"
+    [ngClass]="{'mt-8': seeMore}"
+    class="flex items-center mx-10 text-white md:hover:underline"
+>
+    {{ seeMore ? 'See More' : 'See Less' }}
+
+    <i
+        [ngClass]="{'bi-chevron-down': seeMore, 'bi-chevron-up': !seeMore}"
+        class="ml-2 text-white bi"
+    ></i>
 </div>

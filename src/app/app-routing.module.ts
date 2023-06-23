@@ -89,6 +89,14 @@ const routes: Routes = [
                 '../app/modules/training-and-seminars/training-and-seminars.module'
             ).then((module) => module.TrainingAndSeminarsModule),
     },
+
+    {
+        path: 'character-references',
+        loadChildren: () =>
+            import(
+                '../app/modules/character-refereces/character-refereces.module'
+            ).then((module) => module.CharacterReferecesModule),
+    },
 ]
 
 @NgModule({

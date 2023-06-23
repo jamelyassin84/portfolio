@@ -49,6 +49,6 @@ export const BUTTONS = [
 
     {
         title: 'Character References',
-        link: '',
+        link: '/character-references',
     },
 ]

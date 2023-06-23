@@ -1,9 +1,14 @@
-import {Component} from '@angular/core'
+import {Component, SimpleChanges} from '@angular/core'
 
 @Component({
     selector: 'about',
     templateUrl: './about.component.html',
 })
 export class AboutComponent {
-    seeMore: boolean = false
+    seeMore: boolean = true
+
+    ngOnChanges(changes: SimpleChanges): void {
+        if (changes.seeMore) {
+        }
+    }
 }

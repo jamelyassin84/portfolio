@@ -7,6 +7,6 @@ export const NAVIGATION = [
     },
 
     {
-        title: 'PROJECTS',
+        title: 'PROJECTS AND MORE',
     },
 ]

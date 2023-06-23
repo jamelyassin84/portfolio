@@ -1,15 +1,15 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { CharacterReferecesComponent } from './character-refereces.component';
-
-
+import {NgModule} from '@angular/core'
+import {CharacterReferecesComponent} from './character-refereces.component'
+import {SharedModule} from 'app/shared/shared.module'
+import {RouterModule} from '@angular/router'
 
 @NgModule({
-  declarations: [
-    CharacterReferecesComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+    declarations: [CharacterReferecesComponent],
+    imports: [
+        SharedModule,
+        RouterModule.forChild([
+            {path: '', component: CharacterReferecesComponent},
+        ]),
+    ],
 })
-export class CharacterReferecesModule { }
+export class CharacterReferecesModule {}
