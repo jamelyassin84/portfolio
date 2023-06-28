@@ -200,6 +200,7 @@ export const FREE_LANCES = [
         description: '',
     },
     {
+        year: 2020,
         title: 'Automatic Trash Segregator with Mobile Application',
         link: '',
         badges: ['Raspberry Pi', 'Sensors', 'React Native', 'Expo', 'Firebase'],

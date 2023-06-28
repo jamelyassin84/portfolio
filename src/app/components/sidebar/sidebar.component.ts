@@ -8,7 +8,7 @@ import {NAVIGATION} from 'app/app-core/navigations/navigation'
 export class SidebarComponent {
     @HostListener('window:scroll', ['$event'])
     onScroll() {
-     const divs = document.querySelectorAll('[id^="div_"]')
+        const divs = document.querySelectorAll('[id^="div_"]')
         let currentDiv: string | undefined
 
         console.log(divs)
