@@ -33,22 +33,27 @@ const oldTechs = [
     'Vb.net',
     'IoT',
     'Electron',
+    'Nginx',
+    'Docker',
 ]
 
 export const TECHNOLOGIES_USED = [
-    ...new Set([
-        ...FREE_LANCES.reduce(
-            (badges, project) => badges.concat(project.badges),
-            [],
-        ),
-        ...LATEST_PROJECTS.reduce(
-            (badges, project) => badges.concat(project.badges),
-            [],
-        ),
-        ...WORK_EXPERIENCES.reduce(
-            (badges, project) => badges.concat(project.badges),
-            [],
-        ),
-        ...oldTechs,
-    ]),
-]
+    ...[
+        ...new Set([
+            ...FREE_LANCES.reduce(
+                (badges, project) => badges.concat(project.badges),
+                [],
+            ),
+            ...LATEST_PROJECTS.reduce(
+                (badges, project) => badges.concat(project.badges),
+                [],
+            ),
+            ...WORK_EXPERIENCES.reduce(
+                (badges, project) => badges.concat(project.badges),
+                [],
+            ),
+            ...oldTechs,
+        ]),
+    ].filter((v) => !v.toLowerCase().includes('angular')),
+    'Angular',
+].sort((a, b) => a.localeCompare(b))

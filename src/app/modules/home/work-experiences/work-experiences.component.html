@@ -6,7 +6,7 @@
     [href]="experience.link"
     [ngClass]="{'opacity-60': hovered}"
     *ngFor="let experience of WORK_EXPERIENCES"
-    class="grid items-start my-4 rounded-md md:p-5 md:grid-cols-4 gap-x-5 md:hover:opacity-100 md:hover:bg-black/20 md:hover:shadow-2xl shadow-white/50 md:hover:glass-effect"
+    class="grid w-full my-5 rounded-lg md:border md:p-10 md:grid-cols-2 md:hover:opacity-100 md:hover:bg-sidebar-bg/20 md:hover:shadow-2xl md:shadow-white/50 md:hover:glass-effect md:shadow-none shadow-purple-600/10 border-gray-100/5"
 >
     <div
         class="flex items-center mt-5 mb-1 text-sm text-sub-headline-text md:text-base"
@@ -18,10 +18,10 @@
 
     <div class="col-span-3">
         <div
-            class="font-medium leading-loose text-white md:text-lg md:my-4 md:text-brand-yellow"
+            class="font-medium leading-loose text-slate-200 md:text-lg md:my-4 md:text-brand-yellow"
         >
             {{ experience.position }} in
-            <div class="text-white md:font-bold md:text-brand-red">
+            <div class="text-slate-200 md:font-bold md:text-brand-red">
                 {{ experience.company }}
             </div>
         </div>

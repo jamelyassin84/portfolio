@@ -10,14 +10,16 @@
         </div>
         <div class="text-5xl font-bold text-brand-blue">Soft Skills</div>
 
-        <div class="grid grid-cols-3 gap-5 mt-20">
+        <div class="grid gap-5 mt-8 md:grid-cols-3 md:mt-20">
             <core-skill
                 *ngFor="let skill of SOFT_SKILLS"
                 [title]="skill.title"
                 [percentage]="skill.percentage"
             />
         </div>
-
+        <br />
+        <br />
+        <br />
         <whats-next />
     </div>
 </div>

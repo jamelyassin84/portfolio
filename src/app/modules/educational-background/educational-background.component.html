@@ -8,7 +8,7 @@
             <i class="mr-4 bi bi-arrow-left"></i>
             Jamel Yassin
         </div>
-        <div class="text-5xl font-bold text-brand-blue">
+        <div class="text-3xl font-bold md:text-5xl text-brand-blue">
             Educational Background
         </div>
 
@@ -20,7 +20,7 @@
             [href]="background.link"
             [ngClass]="{'opacity-60': hovered}"
             *ngFor="let background of EDUCATIONAL_BACKGROUNDS"
-            class="grid items-start grid-cols-4 p-5 my-4 rounded-md gap-x-5 md:hover:opacity-100 md:hover:bg-black/20 md:hover:shadow-2xl shadow-white/50 md:hover:glass-effect"
+            class="grid items-start my-4 rounded-md md:p-5 md:grid-cols-4 gap-x-5 md:hover:opacity-100 md:hover:bg-black/20 md:hover:shadow-2xl shadow-white/50 md:hover:glass-effect"
         >
             <div class="flex items-center mt-5 text-sub-headline-text">
                 <div>{{ background.dates[0] }}</div>
@@ -53,7 +53,7 @@
                                     'text-amber-500 bg-amber-500/20':
                                         background.status !== 'completed'
                                 }"
-                                class="h-[35px] px-4 py-1 mx-2 my-2 text-sm rounded-full flex items-center text-center"
+                                class="h-[35px] px-4 py-1 uppercase tracking-widest mr-4 md:mr-0 md:mx-2 my-2 text-sm rounded-full flex items-center text-center"
                             >
                                 {{ background.status }}
                             </div>
@@ -62,7 +62,9 @@
                 </div>
             </div>
         </a>
-
+        <br />
+        <br />
+        <br />
         <whats-next />
     </div>
 </div>

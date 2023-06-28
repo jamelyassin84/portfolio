@@ -1,13 +1,13 @@
 export const CHARACTER_REFERENCES = [
     {
         name: 'Ali Almansoori',
-        designation: 'CEO Digital Brand Work Technology',
-        contact: 'info@digitalbrandork.com',
+        designation: 'CEO, Digital Brand Work Technology',
+        contact: 'info@digitalbrandork.com | +971-50-606-9289',
     },
 
     {
         name: 'Mohammad Alabdooli',
-        designation: 'Senior Partner Digital Brand Work Technology',
+        designation: 'Senior Partner, Digital Brand Work Technology',
         contact: '+97154-447-3584',
     },
 

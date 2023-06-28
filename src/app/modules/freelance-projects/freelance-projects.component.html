@@ -1,38 +1,42 @@
-<div class="w-full flex min-h-screen" flashLight>
-    <div class="mx-auto w-full max-w-screen-lg py-20">
+<div class="flex w-full min-h-screen" flashLight>
+    <div class="w-full max-w-screen-lg py-20 mx-auto">
         <div
             role="button"
             routerLink="/"
-            class="text-brand-yellow font-bold flex items-center md:hover:text-yellow-500"
+            class="flex items-center font-bold text-brand-yellow md:hover:text-yellow-500"
         >
-            <i class="bi bi-arrow-left mr-4"></i>
+            <i class="mr-4 bi bi-arrow-left"></i>
             Jamel Yassin
         </div>
-        <div class="text-5xl font-bold text-brand-blue">
+        <div class="text-3xl font-bold md:text-5xl text-brand-blue">
             Freelance and Pro bono Projects
         </div>
 
-        <table class="w-full text-secondary-text mt-8 text-left">
+        <table class="w-full mt-8 text-left text-secondary-text">
             <thead>
-                <tr class="text-white h-[50px]">
+                <tr class="text-slate-200 h-[50px]">
+                    <th>Year</th>
                     <th>Project</th>
-                    <th>Techs</th>
-                    <th>Link</th>
+                    <th class="hidden md:table-cell">Techs</th>
+                    <th class="hidden md:table-cell">Link</th>
                 </tr>
             </thead>
 
             <tbody>
                 <tr
-                    class="h-20 border-t border-t-secondary-text/20"
+                    class="h-20 align-middle border-t border-t-secondary-text/20"
                     *ngFor="let project of FREE_LANCES"
                 >
-                    <td>{{ project.title }}</td>
-                    <td>
-                        <div class="inline-block w-full">
-                            <div class="inline-block">
-                                <div class="flex flex-wrap -mx-1 items-start">
+                    <td class="pr-10">{{ project.year }}</td>
+                    <td class="pr-4 font-semibold leading-snug text-slate-200">
+                        {{ project.title }}
+                    </td>
+                    <td class="hidden pr-4 md:table-cell">
+                        <div class="w-full inline-table-cell">
+                            <div class="inline-table-cell">
+                                <div class="flex flex-wrap items-start -mx-1">
                                     <div
-                                        class="h-[35px] px-4 py-1 mx-2 my-2 text-sm rounded-full text-brand-purple flex items-center text-center bg-brand-purple/20"
+                                        class="md:h-[35px] px-3 py-1 mr-4 md:mr-0 md:mx-2 my-2 text-sm rounded-full text-purple-300 flex items-center text-center bg-brand-purple/10"
                                         *ngFor="let badge of project.badges"
                                     >
                                         {{ badge }}
@@ -41,7 +45,7 @@
                             </div>
                         </div>
                     </td>
-                    <td>
+                    <td class="hidden md:table-cell">
                         <a
                             class="md:hover:text-brand-yellow md:hover:underline"
                             target="_blank"
@@ -52,7 +56,9 @@
                 </tr>
             </tbody>
         </table>
-
+        <br />
+        <br />
+        <br />
         <whats-next />
     </div>
 </div>

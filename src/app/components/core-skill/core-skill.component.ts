@@ -4,7 +4,9 @@ import {Component, Input} from '@angular/core'
     selector: 'core-skill',
     template: `
         <div class="w-full flex flex-col">
-            <div class="mb-2 text-white font-bold text-lg">{{ title }}</div>
+            <div class="mb-2   text-slate-200 font-bold ">
+                {{ title }}
+            </div>
 
             <div class="bg-gray-300 h-[20px] w-full rounded-md overflow-hidden">
                 <div

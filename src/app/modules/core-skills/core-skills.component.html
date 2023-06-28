@@ -8,9 +8,11 @@
             <i class="mr-4 bi bi-arrow-left"></i>
             Jamel Yassin
         </div>
-        <div class="text-5xl font-bold text-brand-blue">Core Skills</div>
+        <div class="text-3xl font-bold md:text-5xl text-brand-blue">
+            Core Skills
+        </div>
 
-        <div class="grid grid-cols-3 gap-5 mt-20">
+        <div class="grid gap-5 mt-8 md:mt-20 md:grid-cols-3">
             <core-skill
                 type="core"
                 [title]="skill.title"
@@ -18,7 +20,8 @@
                 *ngFor="let skill of CORE_SKILLS"
             />
         </div>
-
+        <br />
+        <br />
         <whats-next />
     </div>
 </div>

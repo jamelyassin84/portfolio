@@ -8,11 +8,11 @@
             <i class="mr-4 bi bi-arrow-left"></i>
             Jamel Yassin
         </div>
-        <div class="text-5xl font-bold text-brand-blue">
+        <div class="text-3xl font-bold md:text-5xl text-brand-blue">
             Character References
         </div>
 
-        <div class="grid grid-cols-2 gap-4 mt-20">
+        <div class="grid gap-4 mt-20 md:grid-cols-2">
             <div
                 *ngFor="let reference of CHARACTER_REFERENCES"
                 class="flex flex-col p-5 bg-sidebar-bg"
@@ -21,7 +21,7 @@
                     class="mx-auto text-9xl bi bi-person-circle text-brand-blue"
                 ></i>
 
-                <div class="mt-4 text-2xl font-bold text-center text-white">
+                <div class="mt-4 text-2xl font-bold text-center text-slate-200">
                     {{ reference.name }}
                 </div>
                 <div class="mt-4 font-bold text-center text-secondary-text">
@@ -34,7 +34,9 @@
                 <br />
             </div>
         </div>
-
+        <br />
+        <br />
+        <br />
         <whats-next></whats-next>
     </div>
 </div>

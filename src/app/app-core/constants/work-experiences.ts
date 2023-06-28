@@ -22,6 +22,7 @@ export const WORK_EXPERIENCES = [
             'NGRX',
             'Rxjs',
             'Karma',
+            'Angular MDC',
         ],
     },
 

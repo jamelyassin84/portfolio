@@ -8,25 +8,27 @@
             <i class="mr-4 bi bi-arrow-left"></i>
             Jamel Yassin
         </div>
-        <div class="text-5xl font-bold text-brand-blue">
-            Achievements & Recognition
+        <div class="text-3xl font-bold md:text-5xl text-brand-blue">
+            Achievements
         </div>
 
         <a
             *ngFor="let achievement of ACHIEVEMENTS"
-            class="grid items-center grid-cols-4 p-5 my-4 rounded-md gap-x-5"
+            class="grid items-center my-4 rounded-md md:p-5 md:grid-cols-4 gap-x-5"
         >
             <div class="flex items-center mt-5 text-sub-headline-text">
                 <div>{{ achievement.date }}</div>
             </div>
 
             <div class="col-span-3">
-                <div class="text-lg text-secondary-text">
+                <div class="pr-4 font-semibold leading-snug text-slate-200">
                     {{ achievement.title }}
                 </div>
             </div>
         </a>
-
+        <br />
+        <br />
+        <br />
         <whats-next />
     </div>
 </div>

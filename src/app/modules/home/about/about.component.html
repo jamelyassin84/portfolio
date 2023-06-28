@@ -139,12 +139,12 @@
     role="button"
     (click)="seeMore = !seeMore"
     [ngClass]="{'md:mt-8': seeMore}"
-    class="flex items-center text-sm md:text-white text-brand-blue md:mx-10 md:hover:underline md:text-base"
+    class="flex items-center text-sm md:text-slate-200 text-brand-blue md:mx-10 md:hover:underline md:text-base"
 >
     {{ seeMore ? 'See More' : 'See Less' }}
 
     <i
         [ngClass]="{'bi-chevron-down': seeMore, 'bi-chevron-up': !seeMore}"
-        class="ml-2 text-white bi"
+        class="ml-2 text-slate-200 bi"
     ></i>
 </div>

@@ -1,5 +1,6 @@
 export const FREE_LANCES = [
     {
+        year: 2023,
         title: 'BPLO Leganes',
         link: '',
         badges: [
@@ -13,6 +14,7 @@ export const FREE_LANCES = [
         description: '',
     },
     {
+        year: 2023,
         title: 'Chicken Feeder',
         link: '',
         badges: ['Arduino', 'Wifi Module', 'Firebase', 'React Native', 'Expo'],
@@ -20,6 +22,7 @@ export const FREE_LANCES = [
     },
 
     {
+        year: 2023,
         title: 'ISUFST Grade Predictor using Psychometric Performance',
         link: 'https://github.com/jamelyassin84/student-performance-front-end-for-students',
         badges: ['Angular 15', 'Laravel'],
@@ -27,6 +30,7 @@ export const FREE_LANCES = [
     },
 
     {
+        year: 2022,
         title: 'CPU Grade Predictor',
         link: 'https://github.com/jamelyassin84/student-performance-front-end-for-admin.git',
         badges: ['Angular 14', 'Laravel'],
@@ -34,12 +38,14 @@ export const FREE_LANCES = [
     },
 
     {
+        year: 2020,
         title: 'ISUFST Human Resource Management on Cloud',
         link: 'https://github.com/CICT-ISCOF/hr-cloud.git',
         badges: ['React', 'Laravel', 'Mail Gun'],
         description: '',
     },
     {
+        year: 2023,
         title: 'ISAT-U Faculties & staffs Management System',
         link: '',
         badges: ['Angular 15', 'Firebase'],
@@ -48,6 +54,7 @@ export const FREE_LANCES = [
     },
 
     {
+        year: 2023,
         title: 'ISAT-U Yearbook Generation System',
         link: '',
         badges: ['Angular 16', 'Laravel'],
@@ -55,24 +62,28 @@ export const FREE_LANCES = [
     },
 
     {
+        year: 2023,
         title: 'Kwizzie',
         link: '',
         badges: ['React Native', 'Expo'],
         description: '',
     },
     {
+        year: 2023,
         title: 'ISUFST Lagaw & Learn',
         description: '',
         badges: ['Angular 16', 'Laravel', 'AWS', 'S3', 'Amplify', 'EC2'],
         link: 'https://github.com/CICT-ISCOF/lagaw-and-learn-website.git',
     },
     {
+        year: 2023,
         title: 'Rural Health Unit of Santa Barbara',
         description: '',
         badges: ['Angular 16', 'Firebase', 'Mail Gun'],
         link: 'https://github.com/jamelyassin84/sta-barbara-rhu.git',
     },
     {
+        year: 2023,
         title: 'Rich English',
         link: '',
         badges: [
@@ -91,18 +102,21 @@ export const FREE_LANCES = [
         description: '',
     },
     {
+        year: 2023,
         title: 'San Joaquin Certificates Management System',
         link: 'https://tiolasgov.github.io/',
         badges: ['Angular 15', 'Firebase'],
         description: '',
     },
     {
+        year: 2023,
         title: 'Mango Sweetness Detection',
         link: '',
         badges: ['Angular 15', 'Ionic', 'Teachable Machine', 'TFJS'],
         description: '',
     },
     {
+        year: 2023,
         title: 'Weed Detection and Recognition',
         link: 'https://github.com/CICT-ISCOF/ionic-weed-detection.git',
         badges: [
@@ -115,18 +129,21 @@ export const FREE_LANCES = [
         description: '',
     },
     {
+        year: 2023,
         title: 'Y-Express',
         link: '',
         badges: ['Angular 16', 'Firebase'],
         description: '',
     },
     {
+        year: 2020,
         title: 'College Supreme Student Council election management and voting web and mobile application',
         link: 'https://github.com/jamelyassin84/CSSC.git',
         badges: ['Angular 8', 'Firebase'],
         description: '',
     },
     {
+        year: 2019,
         title: 'School/University Finder',
         link: 'https://github.com/jamelyassin84/FaceRecognition.git',
         badges: ['React Native', 'Expo', 'Firebase'],
@@ -134,12 +151,14 @@ export const FREE_LANCES = [
     },
 
     {
+        year: 2020,
         title: 'Attendance System using Facial Recognition',
         link: 'https://github.com/jamelyassin84/FaceRecognition.git',
         badges: ['Raspberry Pi', 'Ip Camera', 'OpenCv', 'SQLite', 'Python'],
         description: '',
     },
     {
+        year: 2020,
         title: 'Koi monitoring (IoT)',
         link: 'https://github.com/jamelyassin84/KOI.git',
         badges: [
@@ -153,24 +172,28 @@ export const FREE_LANCES = [
         description: '',
     },
     {
+        year: 2020,
         title: 'Trash Vending Machine',
         link: '',
         badges: ['Raspberry Pi', 'Sensors', 'React Native', 'Expo', 'Firebase'],
         description: '',
     },
     {
+        year: 2019,
         title: 'Credit Cooperative Automated System',
         link: 'https://github.com/CICT-ISCOF/loan.git',
         badges: ['Angular 7', 'Firebase', 'Mail Gun'],
         description: '',
     },
     {
+        year: 2020,
         title: 'Gardenscapes Assistance',
         link: 'https://github.com/CICT-ISCOF/GardenScapes-Assistance.git',
         badges: ['React Native', 'Expo', 'Firebase'],
         description: '',
     },
     {
+        year: 2020,
         title: 'Air Quality Sensor with Mobile Application',
         link: '',
         badges: ['Raspberry Pi', 'Sensors', 'React Native', 'Expo', 'Firebase'],
@@ -183,18 +206,21 @@ export const FREE_LANCES = [
         description: '',
     },
     {
+        year: 2020,
         title: 'Turn Trash into Treasure',
         link: '',
         badges: ['Raspberry Pi', 'Sensors', 'React Native', 'Expo', 'Firebase'],
         description: '',
     },
     {
+        year: 2018,
         title: 'Fish Marketplace',
         link: '',
         badges: ['Angular 6', 'Laravel', 'Socket io'],
         description: '',
     },
     {
+        year: 2017,
         title: 'Online Job Posting',
         link: '',
         badges: ['HTML', 'SCSS', 'JQuery', 'PHP', 'MySQL'],
@@ -202,6 +228,7 @@ export const FREE_LANCES = [
     },
 
     {
+        year: 2023,
         title: 'MoodSync',
         link: '',
         badges: [
@@ -216,9 +243,10 @@ export const FREE_LANCES = [
     },
 
     {
+        year: 2023,
         title: 'TrustAdvisor',
         link: '',
         badges: ['Angular 16', 'Nest Js'],
         description: '',
     },
-]
+].sort((a, b) => b.year - a.year)

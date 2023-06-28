@@ -35,7 +35,7 @@ export const BUTTONS = [
         link: '/educational-background',
     },
     {
-        title: 'Achievements & Recognitions',
+        title: 'Achievements    ',
         link: '/achievements-and-recognition',
     },
     {
