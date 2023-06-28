@@ -3,12 +3,12 @@
         <div
             role="button"
             routerLink="/"
-            class="flex items-center font-bold text-brand-yellow md:hover:text-yellow-500"
+            class="flex items-center font-bold text-brand-yellow lg:hover:text-yellow-500"
         >
             <i class="mr-4 bi bi-arrow-left"></i>
             Jamel Yassin
         </div>
-        <div class="text-3xl font-bold md:text-5xl text-brand-blue">
+        <div class="text-3xl font-bold lg:text-5xl text-brand-blue">
             Freelance and Pro bono Projects
         </div>
 
@@ -17,8 +17,8 @@
                 <tr class="text-slate-200 h-[50px]">
                     <th>Year</th>
                     <th>Project</th>
-                    <th class="hidden md:table-cell">Techs</th>
-                    <th class="hidden md:table-cell">Link</th>
+                    <th class="hidden lg:table-cell">Techs</th>
+                    <th class="hidden lg:table-cell">Link</th>
                 </tr>
             </thead>
 
@@ -31,12 +31,12 @@
                     <td class="pr-4 font-semibold leading-snug text-slate-200">
                         {{ project.title }}
                     </td>
-                    <td class="hidden pr-4 md:table-cell">
+                    <td class="hidden pr-4 lg:table-cell">
                         <div class="w-full inline-table-cell">
                             <div class="inline-table-cell">
                                 <div class="flex flex-wrap items-start -mx-1">
                                     <div
-                                        class="md:h-[35px] px-3 py-1 mr-4 md:mr-0 md:mx-2 my-2 text-sm rounded-full text-purple-300 flex items-center text-center bg-brand-purple/10"
+                                        class="lg:h-[35px] px-3 py-1 mr-4 lg:mr-0 lg:mx-2 my-2 text-sm rounded-full text-purple-300 flex items-center text-center bg-brand-purple/10"
                                         *ngFor="let badge of project.badges"
                                     >
                                         {{ badge }}
@@ -45,9 +45,9 @@
                             </div>
                         </div>
                     </td>
-                    <td class="hidden md:table-cell">
+                    <td class="hidden lg:table-cell">
                         <a
-                            class="md:hover:text-brand-yellow md:hover:underline"
+                            class="lg:hover:text-brand-yellow lg:hover:underline"
                             target="_blank"
                             href="{{ project.link ?? project.description }}"
                             >{{ project.link ?? project.description }}</a

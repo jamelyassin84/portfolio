@@ -3,12 +3,12 @@
         <div
             role="button"
             routerLink="/"
-            class="flex items-center font-bold text-brand-yellow md:hover:text-yellow-500"
+            class="flex items-center font-bold text-brand-yellow lg:hover:text-yellow-500"
         >
             <i class="mr-4 bi bi-arrow-left"></i>
             Jamel Yassin
         </div>
-        <div class="text-3xl font-bold md:text-5xl text-brand-blue">
+        <div class="text-3xl font-bold lg:text-5xl text-brand-blue">
             Latest Projects
         </div>
 
@@ -19,9 +19,9 @@
             (mouseleave)="hovered = false"
             [ngClass]="{'opacity-60': hovered}"
             *ngFor="let project of LATEST_PROJECTS; let i = index"
-            class="grid w-full p-4 my-5 border rounded-lg shadow-md md:p-10 md:grid-cols-2 md:hover:opacity-100 md:hover:bg-sidebar-bg/20 md:hover:shadow-2xl md:shadow-white/50 md:hover:glass-effect md:shadow-none shadow-purple-600/10 border-gray-100/5"
+            class="grid w-full p-4 my-5 border rounded-lg shadow-md lg:p-10 lg:grid-cols-2 lg:hover:opacity-100 lg:hover:bg-sidebar-bg/20 lg:hover:shadow-2xl lg:shadow-white/50 lg:hover:glass-effect lg:shadow-none shadow-purple-600/10 border-gray-100/5"
         >
-            <div *ngIf="!isEven(i)" class="relative hidden md:block">
+            <div *ngIf="!isEven(i)" class="relative hidden lg:block">
                 <div class="scale-[1.2] origin-top-left relative -z-[9]">
                     <img
                         style="
@@ -37,12 +37,12 @@
 
             <div
                 [ngClass]="{
-                    'md:text-right': !isEven(i),
+                    'lg:text-right': !isEven(i),
                     'text-left': isEven(i)
                 }"
                 class="relative z-10"
             >
-                <div class="text-sm text-brand-red md:text-base">
+                <div class="text-sm text-brand-red lg:text-base">
                     Featured Project
                 </div>
 
@@ -51,13 +51,13 @@
                 </div>
 
                 <div
-                    class="my-4 text-sm text-left rounded-md md:p-10 md:text-base bg-sidebar-bg text-secondary-text"
+                    class="my-4 text-sm text-left rounded-md lg:p-10 lg:text-base bg-sidebar-bg text-secondary-text"
                 >
                     {{ project.description }}
                 </div>
             </div>
 
-            <div *ngIf="isEven(i)" class="relative hidden md:block">
+            <div *ngIf="isEven(i)" class="relative hidden lg:block">
                 <div class="scale-[1.2] origin-top-right relative -z-[9]">
                     <img
                         style="
@@ -71,11 +71,11 @@
                 </div>
             </div>
 
-            <div class="inline-block w-full col-span-2 md:mt-4">
-                <div class="inline-block md:mt-4">
+            <div class="inline-block w-full col-span-2 lg:mt-4">
+                <div class="inline-block lg:mt-4">
                     <div class="flex flex-wrap">
                         <div
-                            class="md:h-[35px] px-3 py-1 mr-4 md:mr-0 md:mx-2 my-2 text-sm rounded-full text-purple-300 flex items-center text-center bg-brand-purple/10"
+                            class="lg:h-[35px] px-3 py-1 mr-4 lg:mr-0 lg:mx-2 my-2 text-sm rounded-full text-purple-300 flex items-center text-center bg-brand-purple/10"
                             *ngFor="let badge of project.badges"
                         >
                             {{ badge }}

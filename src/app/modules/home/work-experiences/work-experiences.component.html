@@ -6,10 +6,10 @@
     [href]="experience.link"
     [ngClass]="{'opacity-60': hovered}"
     *ngFor="let experience of WORK_EXPERIENCES"
-    class="grid w-full my-5 rounded-lg md:border md:p-10 md:grid-cols-2 md:hover:opacity-100 md:hover:bg-sidebar-bg/20 md:hover:shadow-2xl md:shadow-white/50 md:hover:glass-effect md:shadow-none shadow-purple-600/10 border-gray-100/5"
+    class="grid w-full my-5 rounded-lg lg:border lg:p-10 lg:grid-cols-2 lg:hover:opacity-100 lg:hover:bg-sidebar-bg/20 lg:hover:shadow-2xl lg:shadow-white/50 lg:hover:glass-effect lg:shadow-none shadow-purple-600/10 border-gray-100/5"
 >
     <div
-        class="flex items-center mt-5 mb-1 text-sm text-sub-headline-text md:text-base"
+        class="flex items-center mt-5 mb-1 text-sm text-sub-headline-text lg:text-base"
     >
         <div>{{ experience.dates[0] }}</div>
         <div class="w-[20px] border-b border-sub-headline-text mx-2"></div>
@@ -18,15 +18,15 @@
 
     <div class="col-span-3">
         <div
-            class="font-medium leading-loose text-slate-200 md:text-lg md:my-4 md:text-brand-yellow"
+            class="font-medium leading-loose text-slate-200 lg:text-lg lg:my-4 lg:text-brand-yellow"
         >
             {{ experience.position }} in
-            <div class="text-slate-200 md:font-bold md:text-brand-red">
+            <div class="text-slate-200 lg:font-bold lg:text-brand-red">
                 {{ experience.company }}
             </div>
         </div>
 
-        <div class="mt-2 text-sub-headline-text md:text-md">
+        <div class="mt-2 text-sub-headline-text lg:text-md">
             {{ experience.designation }}
         </div>
 
@@ -37,7 +37,7 @@
         <div class="inline-block w-full mt-4">
             <div class="flex flex-wrap -mx-1">
                 <div
-                    class="md:h-[35px] px-3 py-1 mr-4 md:mr-0 md:mx-2 my-2 text-sm rounded-full text-purple-300 flex items-center text-center bg-brand-purple/10"
+                    class="lg:h-[35px] px-3 py-1 mr-4 lg:mr-0 lg:mx-2 my-2 text-sm rounded-full text-purple-300 flex items-center text-center bg-brand-purple/10"
                     *ngFor="let badge of experience.badges"
                 >
                     {{ badge }}

@@ -1,8 +1,8 @@
-<div class="flex md:fixed md:w-1/2 md:h-screen">
-    <div class="w-full max-w-screen-sm py-10 md:pr-10 md:ml-auto">
+<div class="flex pl-10 lg:fixed lg:w-1/2 lg:h-screen">
+    <div class="w-full max-w-screen-sm py-10 lg:pr-10 lg:ml-auto">
         <div></div>
 
-        <div class="flex items-center mt-4 md:my-10">
+        <div class="flex items-center mt-4 lg:my-10">
             <div></div>
 
             <div>
@@ -18,7 +18,7 @@
                 </div>
 
                 <div
-                    class="pr-20 my-5 font-light md:my-10 md:text-5xl text-secondary-text"
+                    class="pr-20 my-5 font-light lg:my-10 lg:text-5xl text-secondary-text md:text-lg"
                 >
                     I empower businesses with powerful, personalized products
                     and deliver blazingly fast, innovative digital experiences.
@@ -26,30 +26,31 @@
             </div>
         </div>
 
-        <div class="hidden text-brand-blue md:block">
+        <div class="hidden text-slate-500 lg:block">
             <div
                 role="button"
-                (click)="currentMenu = nav.title"
+                (click)="scrollToDiv(nav.div)"
                 [ngClass]="{
-                    'text-brand-purple pointer-events-none':
+                    'text-brand-purple pointer-events-none transition-all':
                         currentMenu === nav.title
                 }"
-                class="flex items-center my-3 font-bold tracking-widest uppercase transition1"
+                class="flex items-center my-3 font-bold tracking-widest uppercase transition-all transition1"
                 *ngFor="let nav of NAVIGATION"
             >
                 <div
                     [ngClass]="{
-                        'w-[50px]': currentMenu !== nav.title,
-                        'border-brand-purple': currentMenu === nav.title
+                        'w-[50px] transition-all': currentMenu !== nav.title,
+                        'border-brand-purple transition-all':
+                            currentMenu === nav.title
                     }"
-                    class="w-[100px] border-b border-brand-blue mr-2 transition1"
+                    class="w-[100px] border-b border-slate-500 mr-2 transition1 transition-all"
                 ></div>
                 {{ nav.title }}
             </div>
         </div>
 
         <ul
-            class="flex w-full md:space-x-4 md:mt-8 md:scale-75 md:justify-center md:items-center md:mx-auto md:-ml-8 md:w-auto md:absolute md:bottom-40"
+            class="flex w-full lg:space-x-4 lg:mt-8 lg:scale-75 lg:justify-center lg:items-center lg:mx-auto lg:-ml-8 lg:w-auto lg:absolute lg:bottom-40"
         >
             <a
                 class="origin-left scale-75"

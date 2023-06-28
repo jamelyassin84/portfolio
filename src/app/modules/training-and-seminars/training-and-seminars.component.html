@@ -3,18 +3,18 @@
         <div
             role="button"
             routerLink="/"
-            class="flex items-center font-bold text-brand-yellow md:hover:text-yellow-500"
+            class="flex items-center font-bold text-brand-yellow lg:hover:text-yellow-500"
         >
             <i class="mr-4 bi bi-arrow-left"></i>
             Jamel Yassin
         </div>
-        <div class="text-3xl font-bold md:text-5xl text-brand-blue">
+        <div class="text-3xl font-bold lg:text-5xl text-brand-blue">
             Training & Seminars
         </div>
 
         <div
             *ngFor="let achievement of TRAINING_AND_SEMINARS"
-            class="grid items-center my-4 rounded-md md:p-5 md:grid-cols-4 gap-x-5"
+            class="grid items-center my-4 rounded-md lg:p-5 lg:grid-cols-4 gap-x-5"
         >
             <div class="flex items-center mt-5 text-sub-headline-text">
                 <div>{{ achievement.date }}</div>
