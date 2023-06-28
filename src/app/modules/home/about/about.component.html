@@ -1,5 +1,5 @@
 <div
-    [ngClass]="{'h-[30vh]': seeMore}"
+    [ngClass]="{'h-[25vh]': seeMore}"
     class="overflow-hidden md:p-10 text-secondary-text md:text-sub-headline-text"
 >
     <div
@@ -138,8 +138,8 @@
 <div
     role="button"
     (click)="seeMore = !seeMore"
-    [ngClass]="{'mt-8': seeMore}"
-    class="flex items-center hidden mx-10 text-white md:hover:underline md:block"
+    [ngClass]="{'md:mt-8': seeMore}"
+    class="flex items-center text-sm md:text-white text-brand-blue md:mx-10 md:hover:underline md:text-base"
 >
     {{ seeMore ? 'See More' : 'See Less' }}
 
