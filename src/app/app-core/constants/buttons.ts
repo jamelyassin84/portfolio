@@ -1,6 +1,6 @@
 export const BUTTONS = [
     {
-        title: 'View Full Curriculum Vitae',
+        title: 'View Full CV',
         link: '',
     },
 

@@ -1,24 +1,31 @@
-<div class="grid grid-cols-2">
+<div class="grid md:grid-cols-2">
     <sidebar />
 
-    <div class="w-full max-w-screen-sm p-10 mr-auto">
+    <div class="w-full max-w-screen-sm mr-auto md:p-10">
         <about />
 
-        <div class="px-5">
+        <div class="md:px-5">
+            <div
+                class="mt-10 -mb-4 text-sm font-bold tracking-widest uppercase text-slate-200 lg:sr-only"
+            >
+                Work Experiences
+            </div>
             <work-experiences />
         </div>
 
-        <div class="grid grid-cols-2 gap-4 px-10 mt-20">
+        <div class="grid grid-cols-2 gap-4 md:mt-20 md:px-10">
             <button
                 [routerLink]="button.link"
-                class="text-white rounded-md h-[65px] w-full font-medium bg-sidebar-bg md:hover:bg-black md:hover:text-brand-yellow"
+                class="text-white rounded-md h-[65px] md:text-base text-xs w-full font-medium bg-black md:bg-sidebar-bg md:hover:bg-black md:hover:text-brand-yellow"
                 *ngFor="let button of BUTTONS"
             >
                 {{ button.title }}
             </button>
         </div>
 
-        <div class="p-10 text-sub-headline-text">
+        <div
+            class="max-w-md pb-16 mt-10 text-sm sm:pb-0 md:p-10 text-sub-headline-text md:mt-0"
+        >
             Loosely designed in
             <a
                 target="_blank"
