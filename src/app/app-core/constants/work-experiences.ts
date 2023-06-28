@@ -4,7 +4,7 @@ export const WORK_EXPERIENCES = [
         dates: ['2021', 'Present'],
         position: 'Lead Engineer',
         company: 'Digital Brand Work Technology',
-        link: location.origin + '/latest-projects',
+        link: location.origin + '/#/latest-projects',
         designation:
             'Team Leader, Scrum Master, Senior frontend developer, full stack developer, mobile developer.',
         description:
