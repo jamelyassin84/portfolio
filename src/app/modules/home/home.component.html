@@ -17,6 +17,7 @@
 
         <div class="grid grid-cols-2 gap-4 lg:mt-20 lg:px-10">
             <button
+                (click)="download(button)"
                 [routerLink]="button.link"
                 class="text-slate-200 rounded-md h-[65px] lg:text-base text-xs w-full font-medium bg-black lg:bg-sidebar-bg lg:hover:bg-black lg:hover:text-brand-yellow"
                 *ngFor="let button of BUTTONS"

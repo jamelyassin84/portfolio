@@ -1,22 +1,32 @@
 export const CORE_SKILLS = [
     {
-        title: 'System Architecture',
+        title: 'Angular',
         percentage: 95,
     },
 
     {
-        title: 'System Analysis',
+        title: 'Ionic',
         percentage: 95,
     },
 
     {
-        title: 'UI Design',
+        title: 'React Native',
+        percentage: 95,
+    },
+
+    {
+        title: 'Tailwind',
         percentage: 100,
     },
 
     {
-        title: 'Stripe Js',
-        percentage: 90,
+        title: 'SCSS/CSS',
+        percentage: 100,
+    },
+
+    {
+        title: 'Firebase',
+        percentage: 100,
     },
 
     {
@@ -30,37 +40,42 @@ export const CORE_SKILLS = [
     },
 
     {
-        title: 'SQL',
+        title: 'Decorators',
+        percentage: 75,
+    },
+
+    {
+        title: 'Payment Gateway',
+        percentage: 60,
+    },
+
+    {
+        title: 'Figma',
+        percentage: 75,
+    },
+
+    {
+        title: 'Adobe XD',
+        percentage: 50,
+    },
+
+    {
+        title: 'System Analysis',
+        percentage: 95,
+    },
+
+    {
+        title: 'System Architecture',
+        percentage: 95,
+    },
+
+    {
+        title: 'Machine Learning',
         percentage: 90,
     },
 
     {
-        title: 'NoSQL',
-        percentage: 100,
-    },
-
-    {
-        title: 'HTML',
-        percentage: 100,
-    },
-
-    {
-        title: 'SCSS',
-        percentage: 100,
-    },
-
-    {
-        title: 'Tailwind',
-        percentage: 100,
-    },
-
-    {
-        title: 'Python',
+        title: 'ORM & ODM',
         percentage: 90,
-    },
-
-    {
-        title: 'Firebase',
-        percentage: 100,
     },
 ]

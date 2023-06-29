@@ -1,4 +1,5 @@
 import {Component} from '@angular/core'
+import {Title} from '@angular/platform-browser'
 import {TECHNOLOGIES_USED} from 'app/app-core/constants/technologies-used'
 
 @Component({
@@ -7,4 +8,10 @@ import {TECHNOLOGIES_USED} from 'app/app-core/constants/technologies-used'
 })
 export class TechnologiesComponent {
     readonly TECHNOLOGIES_USED = TECHNOLOGIES_USED
+
+    constructor(private _titleService: Title) {}
+
+    ngOnInit(): void {
+        this._titleService.setTitle('Jamel Yassin | Technologies Used')
+    }
 }
