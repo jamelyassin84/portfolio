@@ -22,7 +22,7 @@ export class FlashlightDirective {
         this.renderer.setStyle(
             this.el.nativeElement,
             'background-image',
-            'radial-gradient(circle closest-side, rgba(0, 0, 0, 0.75), transparent)',
+            'radial-gradient(circle closest-side, rgba(150, 150, 150, 0.15), transparent)',
         )
         this.renderer.setStyle(
             this.el.nativeElement,

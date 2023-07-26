@@ -9,35 +9,43 @@
     class="grid w-full my-5 rounded-lg lg:border lg:p-10 lg:grid-cols-2 lg:hover:opacity-100 lg:hover:bg-sidebar-bg/20 lg:hover:shadow-2xl lg:shadow-white/50 lg:hover:glass-effect lg:shadow-none shadow-purple-600/10 border-gray-100/5"
 >
     <div
-        class="flex items-center mt-5 mb-1 text-sm text-sub-headline-text lg:text-base"
+        class="flex items-center mt-5 mb-1 text-sm text-slate-400 lg:text-base"
     >
         <div>{{ experience.dates[0] }}</div>
-        <div class="w-[20px] border-b border-sub-headline-text mx-2"></div>
+        <div class="w-[20px] border-b border-slate-400 mx-2"></div>
         <div>{{ experience.dates[1] }}</div>
     </div>
 
     <div class="col-span-3">
         <div
-            class="font-medium leading-loose text-slate-200 lg:text-lg lg:my-4 lg:text-brand-yellow"
+            class="font-medium leading-loose text-slate-200 lg:text-lg lg:my-4"
         >
-            {{ experience.position }} in
-            <div class="text-slate-200 lg:font-bold lg:text-brand-red">
+            <ng-container *ngIf="!hovered; else hoveredText">{{
+                experience.position
+            }}</ng-container>
+            <ng-template #hoveredText>
+                <spam class="text-brand-teal">
+                    {{ experience.position }}
+                </spam>
+            </ng-template>
+            in
+            <div class="text-slate-200 lg:font-bold">
                 {{ experience.company }}
             </div>
         </div>
 
-        <div class="mt-2 text-sub-headline-text lg:text-md">
+        <div class="mt-2 text-slate-400/50 lg:text-md">
             {{ experience.designation }}
         </div>
 
-        <div class="mt-4 text-sm font-light leading-normal text-secondary-text">
+        <div class="mt-4 text-sm font-light leading-normal text-slate-400">
             {{ experience.description }}
         </div>
 
         <div class="inline-block w-full mt-4">
             <div class="flex flex-wrap -mx-1">
                 <div
-                    class="lg:h-[35px] px-3 py-1 mr-4 lg:mr-0 lg:mx-2 my-2 text-sm rounded-full text-purple-300 flex items-center text-center bg-brand-purple/10"
+                    class="lg:h-[35px] px-3 py-1 mr-4 lg:mr-0 lg:mx-2 my-2 text-sm rounded-full text-brand-teal flex items-center text-center bg-brand-teal/10"
                     *ngFor="let badge of experience.badges"
                 >
                     {{ badge }}

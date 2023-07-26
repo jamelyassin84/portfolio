@@ -19,7 +19,7 @@
             <button
                 (click)="download(button)"
                 [routerLink]="button.link"
-                class="text-slate-200 rounded-md h-[65px] lg:text-base text-xs w-full font-medium bg-black lg:bg-sidebar-bg lg:hover:bg-black lg:hover:text-brand-yellow"
+                class="text-slate-200 rounded-md h-[65px] lg:text-base text-xs w-full font-medium bg-transparent border border-slate-200/20 lg:hover:bg-black/60 lg:hover:text-brand-teal"
                 *ngFor="let button of BUTTONS"
             >
                 {{ button.title }}
@@ -33,7 +33,7 @@
             <a
                 target="_blank"
                 href="https://www.figma.com/blog/figma-on-figma-how-we-built-figma-dot-coms-design-system/"
-                class="text-brand-blue hover:text-sky-500"
+                class="text-slate-200 hover:text-brand-teal"
                 >Figma</a
             >
             and coded in
@@ -41,27 +41,27 @@
             <a
                 target="_blank"
                 href="https://code.visualstudio.com/"
-                class="text-brand-blue hover:text-sky-500"
+                class="text-slate-200 hover:text-brand-teal"
                 >Visual Studio Code</a
             >
             by yours truly. Built with
             <a
                 target="_blank"
                 href="https://angular.io/"
-                class="text-brand-blue hover:text-sky-500"
+                class="text-slate-200 hover:text-brand-teal"
                 >Angular 16</a
             >
             and
             <a
                 target="_blank"
                 href="https://tailwindcss.com/docs/guides/angular"
-                class="text-brand-blue hover:text-sky-500"
+                class="text-slate-200 hover:text-brand-teal"
                 >Tailwind CSS</a
             >, deployed in
             <a
                 target="_blank"
                 href="https://github.com/"
-                class="text-brand-blue hover:text-sky-500"
+                class="text-slate-200 hover:text-brand-teal"
                 >Github</a
             >
             . All text is set in the Default System typeface.

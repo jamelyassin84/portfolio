@@ -7,18 +7,18 @@
 
             <div>
                 <div
-                    class="text-4xl font-bold tracking-tight text-brand-yellow sm:text-5xl"
+                    class="text-4xl font-bold tracking-tight sm:text-5xl text-slate-200"
                 >
                     Jamel Yassin
                 </div>
                 <div
-                    class="m-1 mt-3 text-lg font-medium tracking-tight text-brand-red sm:text-xl"
+                    class="m-1 mt-3 text-lg font-medium tracking-tight sm:text-xl text-slate-300"
                 >
-                    Lead Angular Engineer
+                    Front & Backend Engineer
                 </div>
 
                 <div
-                    class="pr-20 my-5 font-light lg:my-10 lg:text-5xl text-secondary-text md:text-lg"
+                    class="pr-20 my-5 font-light lg:my-10 text-secondary-text md:text-lg"
                 >
                     I empower businesses with powerful, personalized products
                     and deliver blazingly fast, innovative digital experiences.
@@ -31,7 +31,7 @@
                 role="button"
                 (click)="scrollToDiv(nav.div)"
                 [ngClass]="{
-                    'text-brand-purple pointer-events-none transition-all':
+                    'text-brand-teal pointer-events-none transition-all':
                         currentMenu === nav.title
                 }"
                 class="flex items-center my-3 font-bold tracking-widest uppercase transition-all transition1"
@@ -40,7 +40,7 @@
                 <div
                     [ngClass]="{
                         'w-[50px] transition-all': currentMenu !== nav.title,
-                        'border-brand-purple transition-all':
+                        'border-brand-teal transition-all':
                             currentMenu === nav.title
                     }"
                     class="w-[100px] border-b border-slate-500 mr-2 transition1 transition-all"

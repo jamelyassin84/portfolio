@@ -20,7 +20,7 @@ export class HomeComponent {
         if (button.title !== 'View Full CV') {
             return
         }
-        const fileUrl = '/assets/jamel-cv.pdf'
+        const fileUrl = '/assets/jcv.pdf'
         const link = document.createElement('a')
         link.href = fileUrl
         link.download = `Jamel Yassin's CV.pdf`
